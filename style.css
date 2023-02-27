@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Criando aqui o box com as infos e estilizando o titulo */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background: linear-gradient(105.18deg, #f4fbfa 0%, #bebebe 100%);
+}
+
+/* trabalha com a section */
+.container{
+    background-color: #E7E7E7;
+    margin: 3vh;
+    height: 100%;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+/* trabalha com left_info */
+h1, p{
+    text-align: center;
+}
+
+h1{
+    font-size: 32px;
+    padding-bottom: 5%;
+}
+
+p{
+    font-size: small;
+    padding-bottom: 12%;
+}
+
+.letra_title:first-child{
+    color: #F78B1F;
+}
+
+.letra_title:last-child{
+    color: #005594;
+}
+
+/* trabalha com eight_info */
+.login_enter{
+    text-align: center;
+}
+
+.form{
+    border: none;
+    border-radius: 5px;
+}
+
+.inp_dados{
+    width: 80%;
+    padding: 0 5% 0 5%;
+    margin-bottom: 8%;
+    height: 2.5em;
+    background-color: #E9EFF6;
+}
+
+.inp_dados:focus-visible{
+    outline: none;
+    list-style: none;
+}
+
+#showPassword{
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.send_btn{
+    background-color: #F78B1F;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    height: 2em;
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.send_btn:hover{
+    opacity: 0.8;
+}
+
+/* essas proximas 3 linhas cortam o icon na tela quando ele tiver a classe: hide-btn */
+.inp_senha span i.hide-btn::before{
+    content: "\f070";
+}
+
+/* last img */
+.last_img img{
+    width: 99%;
+}
+
+/* responsividade teste */
+@media screen and (min-width:846px) {
+    .container{
+        background-color: #005594;
+    }
+
+
+    h1, p {
+        text-align: start;
+        padding: 0;
+    }
+}
