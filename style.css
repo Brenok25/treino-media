@@ -67,10 +67,6 @@ p{
     list-style: none;
 }
 
-#showPassword{
-    display: none;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -81,6 +77,10 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
 .send_btn{
     background-color: #F78B1F;
     color: #ffffff;
@@ -94,6 +94,21 @@ input[type="number"] {
 
 .send_btn:hover{
     opacity: 0.8;
+}
+
+#password{
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    margin-right: 15%;
+}
+
+.inp_senha{
+    background-color: #E9EFF6 ;
+    height: 2.1em;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5%; 
 }
 
 /* essas proximas 3 linhas cortam o icon na tela quando ele tiver a classe: hide-btn */
@@ -112,9 +127,14 @@ input[type="number"] {
         background-color: #005594;
     }
 
+    #password{
+        background-color: #005594;
+        width: 10%;
+    }
 
     h1, p {
         text-align: start;
         padding: 0;
     }
+
 }
