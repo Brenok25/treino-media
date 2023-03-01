@@ -10,13 +10,14 @@
 
 body{
     background: linear-gradient(105.18deg, #f4fbfa 0%, #bebebe 100%);
+    height: 100vh;
 }
 
 /* trabalha com a section */
 .container{
     background-color: #E7E7E7;
     margin: 3vh;
-    height: 100%;
+    height: 88%;
     border-radius: 10px;
     padding: 5%;
 }
@@ -58,8 +59,9 @@ p{
     width: 80%;
     padding: 0 5% 0 5%;
     margin-bottom: 8%;
-    height: 2.5em;
+    height: 4.5vh;
     background-color: #E9EFF6;
+
 }
 
 .inp_dados:focus-visible{
@@ -86,7 +88,7 @@ input[type="password"]::-ms-clear {
     color: #ffffff;
     font-weight: 800;
     font-size: 18px;
-    height: 2em;
+    height: 5vh;
     width: 90%;
     cursor: pointer;
     margin-bottom: 10%;
@@ -105,7 +107,7 @@ input[type="password"]::-ms-clear {
 
 .inp_senha{
     background-color: #E9EFF6 ;
-    height: 2.1em;
+    height: 4.5vh;
     width: 90%;
     border-radius: 5px;
     margin-left: 5%; 
@@ -116,25 +118,41 @@ input[type="password"]::-ms-clear {
     content: "\f070";
 }
 
-/* last img */
-.last_img img{
-    width: 99%;
+/* fazedndo contatos */
+.title_contatos hr, h4{
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin-left: 2.5%;
 }
 
-/* responsividade teste */
-@media screen and (min-width:846px) {
+.title_contatos hr{
+    margin-top: 2%;
+    height: 2px;
+}
+
+/* last img */
+.last_img img{
+    width: 100%;
+    height: auto;
+}
+
+.last_img{
+    width: 41vh;
+    height: 50%;
+    margin: auto;
+
+}
+
+@media screen and (min-width:834px) {
+
     .container{
         background-color: #005594;
     }
-
-    #password{
-        background-color: #005594;
-        width: 10%;
+    .last_img img{
+        width: 70%;
+        margin-left: 9vh;
     }
 
-    h1, p {
-        text-align: start;
-        padding: 0;
-    }
 
-}
+} 
