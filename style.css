@@ -115,24 +115,16 @@ input[type="password"]::-ms-clear {
     margin-left: 5%; 
 }
 
+
+
+.inp_senha span i{
+    padding-top: 1.2vh;
+}
+
 /* essas proximas 3 linhas cortam o icon na tela quando ele tiver a classe: hide-btn */
 .inp_senha span i.hide-btn::before{
     content: "\f070";
 }
-
-
-/* fazedndo contatos */
-/* .title_contatos hr, h4{
-    width: 30%;
-    float: left;
-    text-align: center;
-    margin-left: 2.5%;
-}
-
-.title_contatos hr{
-    margin-top: 2%;
-    height: 2px;
-} */
 
 .social{
     display: none;
@@ -148,7 +140,6 @@ input[type="password"]::-ms-clear {
     width: 41vh;
     height: 50%;
     margin: auto;
-    border: 1px solid red;
 }
 
 @media screen and (min-width:700px) {
@@ -156,10 +147,7 @@ input[type="password"]::-ms-clear {
     .container{
         background-color: #005594;
     }
-    .last_img img{
-        width: 70%;
-        margin-left: 9vh;
-    }
+
 
 
 } 
