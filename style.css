@@ -7,6 +7,7 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     overflow-y: hidden;
+    color: #434141;
 }
 
 body{
@@ -47,7 +48,7 @@ p{
     color: #005594;
 }
 
-/* trabalha com eight_info */
+/* trabalha com right_info */
 .login_enter{
     text-align: center;
 }
@@ -142,12 +143,90 @@ input[type="password"]::-ms-clear {
     margin: auto;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:760px) {
 
-    .container{
-        background-color: #005594;
+    .left_info,
+    .right_info{
+        float: left;
+        margin-top: 6%;
     }
 
+    /* trabalha com left_info */
+    h1, p{
+        text-align: start;
+        padding: 10% 0 10% 10%;
+    }
 
+    h1{
+        font-size: 2.8rem;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .left_info{
+        width: 35%;
+        order: -1;
+    }
+
+    /* trabalha com right_info */
+    .right_info{
+        width: 45%;
+        margin: 10% 0 10% 15vw;
+    }
+
+    .login_enter{
+        width: 100%;
+    }
+
+    /* contato e icons */
+    .social{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .social h4,
+    .line_h4{
+        font-weight: 500;
+        display: inline-flex;
+    }
+    
+    .line_h4{
+        width: 30%;
+    }
+
+    hr{
+        height: 1px;
+        background-color: #000;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .social_icon{
+        display: inline-flex;
+
+        background-color: #E7E7E7;
+        border: 2px solid #F2F2F2;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        width: 4.5vh;
+
+    }
+
+    .social_icon:nth-child(2){
+        margin: 0 5%;
+    }
+
+    .social_icon img{
+        text-align: center;
+        padding: 5px 0 0 5.5px ;
+    }
 
 } 
+
+@media screen and (min-width:1024px) {
+    
+}
