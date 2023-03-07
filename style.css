@@ -241,10 +241,35 @@ input[type="password"]::-ms-clear {
 
 @media screen and (min-width:1024px) {
 
-    .container{
-        background-color: #000;
+    .left_info,
+    .right_info{
+        margin-top: 3%;
     }
 
-    
+    /* trabalha com left_info */
+
+    h1{
+        font-size: 400%;
+        width: 80%;
+        border: 1px solid red;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+
+    .left_info{
+        width: 50vh;
+        border: 1px solid red;
+        margin: 0;
+    }
+    .right_info{
+       border: 1px solid red;
+       align-items: end;
+       margin: 0;
+    }
+
+
     
 }
