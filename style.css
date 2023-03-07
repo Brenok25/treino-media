@@ -69,7 +69,6 @@ p{
 
 .inp_dados:focus-visible{
     outline: none;
-    list-style: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -138,9 +137,7 @@ input[type="password"]::-ms-clear {
 }
 
 .last_img{
-    width: 41vh;
-    height: 50%;
-    margin: auto;
+    display: flex;
 }
 
 @media screen and (min-width:760px) {
